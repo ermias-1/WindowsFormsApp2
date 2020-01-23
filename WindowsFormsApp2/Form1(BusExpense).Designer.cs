@@ -60,7 +60,7 @@
             this.txtTrips.Location = new System.Drawing.Point(374, 127);
             this.txtTrips.Name = "txtTrips";
             this.txtTrips.Size = new System.Drawing.Size(100, 20);
-            this.txtTrips.TabIndex = 2;
+            this.txtTrips.TabIndex = 0;
             this.txtTrips.TextChanged += new System.EventHandler(this.texTrips_TextChanged);
             // 
             // txtTotal
@@ -70,13 +70,14 @@
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(100, 20);
             this.txtTotal.TabIndex = 3;
+            this.txtTotal.TabStop = false;
             // 
             // btnCalculate
             // 
             this.btnCalculate.Location = new System.Drawing.Point(386, 192);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(75, 23);
-            this.btnCalculate.TabIndex = 4;
+            this.btnCalculate.TabIndex = 1;
             this.btnCalculate.Text = "Calculate";
             this.btnCalculate.UseVisualStyleBackColor = true;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
@@ -86,13 +87,14 @@
             this.btnExit.Location = new System.Drawing.Point(386, 236);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
-            this.btnExit.TabIndex = 5;
+            this.btnExit.TabIndex = 2;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // Form1
             // 
+            this.AcceptButton = this.btnCalculate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
